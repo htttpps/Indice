@@ -1,0 +1,152 @@
+@font-face {
+  font-family: "Black";
+  src: url(/Roboto/Roboto-Black.ttf);
+  font-weight: bold;
+  font-style: bold;
+}
+
+
+body {
+    background: rgb(19, 19, 19);
+    border: 5px solid rgb(83, 83, 83);
+    padding: 70px;
+    /*
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("img/IMG.jpg") no-repeat center center fixed;
+  background-attachment: fixed;
+  background-size: cover;*/
+  text-align: center;
+
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5em;
+  flex-wrap: wrap;
+}
+
+h1 {
+  color: #bbbbbb;
+  font-size: 3.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Black";
+  font-weight: bold;
+  font-style: bold;
+}
+
+
+h1:hover {
+  color: #e0e0e0;
+}
+
+.icon{
+    font-size: 100px;
+    color: #bbbbbb;
+
+  }
+
+.icon:hover {
+    color: #e0e0e0;
+  }
+.contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.lds-spinner {
+  width: 65px;
+  height: 50px;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.lds-spinner div {
+  transform-origin: 65px 65px;
+  animation: lds-spinner 1.2s linear infinite;
+}
+
+.lds-spinner div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 60px;
+  width: 15px;
+  height: 30px;
+  border-radius: 15%;
+  background: #bbbbbb;
+}
+
+.lds-spinner div:nth-child(1) {
+  transform: rotate(0deg);
+  animation-delay: -1.1s;
+}
+
+.lds-spinner div:nth-child(2) {
+  transform: rotate(30deg);
+  animation-delay: -1s;
+}
+
+.lds-spinner div:nth-child(3) {
+  transform: rotate(60deg);
+  animation-delay: -0.9s;
+}
+
+.lds-spinner div:nth-child(4) {
+  transform: rotate(90deg);
+  animation-delay: -0.8s;
+}
+
+.lds-spinner div:nth-child(5) {
+  transform: rotate(120deg);
+  animation-delay: -0.7s;
+}
+
+.lds-spinner div:nth-child(6) {
+  transform: rotate(150deg);
+  animation-delay: -0.6s;
+}
+
+.lds-spinner div:nth-child(7) {
+  transform: rotate(180deg);
+  animation-delay: -0.5s;
+}
+
+.lds-spinner div:nth-child(8) {
+  transform: rotate(210deg);
+  animation-delay: -0.4s;
+}
+
+.lds-spinner div:nth-child(9) {
+  transform: rotate(240deg);
+  animation-delay: -0.3s;
+}
+
+.lds-spinner div:nth-child(10) {
+  transform: rotate(270deg);
+  animation-delay: -0.2s;
+}
+
+.lds-spinner div:nth-child(11) {
+  transform: rotate(300deg);
+  animation-delay: -0.1s;
+}
+
+.lds-spinner div:nth-child(12) {
+  transform: rotate(330deg);
+  animation-delay: 0s;
+}
+
+@keyframes lds-spinner {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
